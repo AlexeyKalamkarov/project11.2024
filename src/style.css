@@ -1,0 +1,41 @@
+body {
+  background-color: #141414;
+  margin: 0px auto;
+  font-family: "Urbanist";
+  font-size: 16px;
+  --main-button-color-purple: #703BF7;
+  --main-button-color-black: #141414;
+  --main-button-color-grey: #262626;
+  --main-button-color-grey10: #1A1A1A;
+}
+
+.container {
+  max-width: 1620px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3.65rem;
+  font-weight: 500;
+  color: white;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: white;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 200;
+  color: white;
+}
+
+button {
+  font-family: "Urbanist";
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 200;
+}/*# sourceMappingURL=style.css.map */
