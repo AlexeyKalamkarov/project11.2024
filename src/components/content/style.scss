@@ -211,3 +211,89 @@
         }
     }
 }
+//section 3
+.feedback {
+    .feedback-title {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        .feedback-title-btn {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            button {
+                padding: 18px 24px;
+                background: var(--main-button-color-black);
+                border: 1px var(--main-button-color-grey) solid;
+                border-radius: 10px;
+
+            }
+            p {
+                max-width: 80%;
+            }
+        }
+    }
+
+    .feedback-cards {
+        .feedback-card {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 50px;
+            border: 1px var(--main-button-color-grey10) solid;
+            border-radius: 12px;
+            .star {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+            }
+            .user-feedback {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                .user-feedback-info {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .user-feedback-title {
+                        p {
+                            color: #ffff;
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+    .slider-cards {
+        display: flex;
+        flex-direction: column;
+        .cards-pagitaion {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            gap: 30px;
+            margin-top: 70px;
+
+            .btn-prev {
+                // background-image: url(../../Images/Card/Vector\ \(StrokeL\).svg);
+                padding: 20px;
+                background-color: var(--main-button-color-grey10);
+                border: 1px var(--main-button-color-grey10) solid;
+                border-radius: 50px;
+                cursor: pointer;
+            }
+            .btn-next {
+                // background-image: url(../../Images/Card/Vector\ \(StrokeR\).svg);
+                padding: 20px;
+                background-color: var(--main-button-color-grey10);
+                border: 1px var(--main-button-color-grey10) solid;
+                border-radius: 50px;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
