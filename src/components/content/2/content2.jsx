@@ -1,5 +1,9 @@
 import MediaCard from "./card";
-import '../../content/style.css'
+import '../../content/style.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import FocusOnSelect from "./slider";
+import SampleNextArrow from "./slider";
 
 const Content2 = () => {
     return ( 
@@ -12,9 +16,7 @@ const Content2 = () => {
                 </div>
             </div>
             <div className="section2-cards">
-        <MediaCard/>
-        <MediaCard/>
-        <MediaCard/>
+                <FocusOnSelect/>
             </div>
         </div>
      );

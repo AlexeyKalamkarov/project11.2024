@@ -20,13 +20,13 @@
                 flex-direction: column;
                 gap: 24px;
                 padding-top: 144px;
-                padding-left: 162px;
+                // padding-left: 162px;
             }
             .left-content-button {
                 display: flex;
                 flex-direction: row;
                 gap: 20px;
-                padding-left: 162px;
+                // padding-left: 162px;
 
                 .button-learn {
                     padding: 18px 24px;
@@ -37,7 +37,7 @@
                 .button-browse {
                     padding: 18px 24px;
                     background: var(--main-button-color-purple);
-                    border: 1px #703BF7 solid;
+                    border: 1px var(--main-button-color-purple) solid;
                     border-radius: 10px;
                 }
             }
@@ -45,7 +45,7 @@
                 display: flex;
                 flex-direction: row;
                 gap: 20px;
-                padding-left: 162px;
+                // padding-left: 162px;
                 padding-bottom: 144px;
                 .subcard {
                     padding: 16px 24px;
@@ -70,6 +70,7 @@
             padding: 10px 0px;
             display: flex;
             flex-direction: row;
+            justify-content: center;
             gap: 20px;
             .buttom-card {
                 // position: relative;
@@ -104,18 +105,109 @@
 .section2 {
     display: flex;
     flex-direction: column;
+    margin-top: 144px;
+    gap: 80px;
     .section2-title {
         display: flex;
         flex-direction: column;
+        gap: 14px;
         .section2-title-btn {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             width: 100%;
+            button {
+                padding: 18px 24px;
+                background: var(--main-button-color-black);
+                border: 1px var(--main-button-color-grey) solid;
+                border-radius: 10px;
+
+            }
+            p {
+                max-width: 80%;
+            }
         }
     }
     .section2-cards {
+        .slider-container {
+            .section2-slider-card{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                padding: 40px;
+                margin-right: 30px;
+                border: 1px #262626 solid;
+                border-radius: 12px;
+                .section2-slider-card-img {
+                    img {
+                        border-radius: 10px;
+                        object-fit: cover;
+                        overflow: hidden;
+                    }
+                }
+                .section2-slider-card-info {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    .section2-slider-card-info-icon {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 10px;
+                        .icon-card {
+                            display: flex;
+                            flex-direction: row;
+                            white-space: nowrap;
+                            gap: 4px;
+                            padding: 8px 14px;
+                            background-color: var(--main-button-color-grey);
+                            border: 1px var(--main-button-color-grey10) solid;
+                            border-radius: 28px;
+                            p{
+                                color: #ffff !important;
+                            }
+                        }
+                    }
+                    .section2-slider-card-footer {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        button {
+                            padding: 18px 24px;
+                            background: var(--main-button-color-purple);
+                            border: 1px var(--main-button-color-purple) solid;
+                            border-radius: 10px;        
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .slider-cards {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        .cards-pagitaion {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            gap: 30px;
+            margin-top: 70px;
+
+            .btn-prev {
+                // background-image: url(../../Images/Card/Vector\ \(StrokeL\).svg);
+                padding: 20px;
+                background-color: var(--main-button-color-grey10);
+                border: 1px var(--main-button-color-grey10) solid;
+                border-radius: 50px;
+                cursor: pointer;
+            }
+            .btn-next {
+                // background-image: url(../../Images/Card/Vector\ \(StrokeR\).svg);
+                padding: 20px;
+                background-color: var(--main-button-color-grey10);
+                border: 1px var(--main-button-color-grey10) solid;
+                border-radius: 50px;
+                cursor: pointer;
+            }
+        }
     }
 }

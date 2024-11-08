@@ -7,6 +7,7 @@ body {
   --main-button-color-black: #141414;
   --main-button-color-grey: #262626;
   --main-button-color-grey10: #1A1A1A;
+  --main-button-color-grey60: #999999;
 }
 
 .container {
@@ -27,10 +28,16 @@ h2 {
   color: white;
 }
 
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+}
+
 p {
   font-size: 1.125rem;
   font-weight: 200;
-  color: white;
+  color: var(--main-button-color-grey60);
 }
 
 button {

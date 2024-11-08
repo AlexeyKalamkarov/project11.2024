@@ -1,34 +1,42 @@
-import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import Card1 from '../../../Images/Card/card1.png'
-import '../../content/style.css'
-
-export default function MediaCard() {
-  return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        sx={{ height: 140 }}
-        image={Card1}
-        title="green iguana"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lizard
-        </Typography>
-        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
-  );
+import IconCard1 from '../../../Images/Card/Icon1cardinfo.svg';
+import IconCard2 from '../../../Images/Card/Icon2cardinfo.svg';
+import IconCard3 from '../../../Images/Card/Icon3cardinfo.svg';
+import { CardMean } from './cardhelper';
+const Card = ({id, title, description, price, img}) => {
+  return ( 
+    <div className="section2-slider-card" key={id}>
+        <div className="section2-slider-card-img">
+          <img src={img} alt="" />
+        </div>
+        <div className="section2-slider-card-info">
+          <div className="section2-slider-card-title">
+            <h3>{title}</h3>
+            <p>{description}</p>
+          </div>
+          <div className="section2-slider-card-info-icon">
+            <div className="icon-card">
+              <img src={IconCard1} alt="" />
+              <p>4-Bedroom</p>
+            </div>
+            <div className="icon-card">
+              <img src={IconCard2} alt="" />
+              <p>3-Bathroom</p>
+            </div>
+            <div className="icon-card">
+              <img src={IconCard3} alt="" />
+              <p>Villa</p>
+            </div>
+          </div>
+          <div className="section2-slider-card-footer">
+            <div className="">
+              <p>Price</p>
+              <h3>{price}</h3>
+            </div>
+            <button>View Property Details</button>
+          </div>
+        </div>
+    </div>
+   );
 }
+ 
+export default Card;
