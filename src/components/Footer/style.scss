@@ -1,0 +1,31 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-content1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .footer-content1-left {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 65%;
+
+        }
+        .footer-content1-right {
+            button {
+                padding: 18px 24px;
+                background: var(--main-button-color-purple);
+                border: 1px var(--main-button-color-purple) solid;
+                border-radius: 10px;        
+            }
+
+        }
+    }
+}
